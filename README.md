@@ -1,3 +1,3 @@
-# API-TP
-API METEO/QUALITE DE L'AIR
+# USING 3 API
+
 Authors : Sébastien THOMAS & Anthony DESMARTIN

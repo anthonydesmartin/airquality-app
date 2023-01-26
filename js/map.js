@@ -3,7 +3,7 @@ let meteoLayer = L.layerGroup();
 
 async function airQuality(city, layer) {
   await fetch(
-    `http://api.waqi.info/feed/${city}/?token=2bb11996a4fc2eea9c6b546e5b144a05e532de11`
+    `http://api.waqi.info/feed/${city}/?token={api-key}`
   )
     .catch((error) => {
       console.error("Une erreur est survenue", error);
@@ -58,7 +58,7 @@ async function airQuality(city, layer) {
 
 async function meteo(insee, layer) {
   await fetch(
-    `https://api.meteo-concept.com/api/forecast/daily?token=f6178182b51ce89a3afaca955f0d0242ae230e73e7bebae41bafbe221bfa8237&insee=${insee}`
+    `https://api.meteo-concept.com/api/forecast/daily?token={api-key}&insee=${insee}`
   )
     .catch((error) => {
       console.error("Une erreur est survenue", error);
